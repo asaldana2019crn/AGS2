@@ -1,0 +1,43 @@
+div {
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+p {
+  font-size: 24px;
+  line-height: 32px;
+  text-align: justify;
+}
+  .inicial::first-letter {
+    color: #FFF;
+  }
+    .inicial {
+      text-indent: -16px;
+    }
+  .c1 {
+    width: 390px;
+    float: left;
+  }
+  .c2 {
+    width: 390px;
+    float: right;
+  }
+
+
+img {
+  width: 150px;
+}
+  .izquierda {
+    float: left;
+    margin-right: 20px;
+  }
+  .derecha {
+    float: right;
+    margin-left: 20px;
+  }
+  .capitular {
+    float: left;
+    margin-right: 20px;
+    width: 70px;
+  }
