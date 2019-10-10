@@ -1,0 +1,26 @@
+
+
+table {
+  background-color: red;
+  width: 80%;
+  box-shadow: 5px 5px 5px grey;
+}
+
+  tr {
+    height: 50px;
+
+  }
+
+    th {
+      width: 15px;
+
+    }
+
+    td  {
+      background-color: white;
+      width: 15%;
+    }
+      td:hover  {
+        background-color: lightgrey!important;
+        width: 15%;
+      }
