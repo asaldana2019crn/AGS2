@@ -1,0 +1,64 @@
+p {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  position: relative;
+  top: -10px;
+  left: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 5px grey,
+  inset 2px 2px 5px brown;
+}
+
+.p2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  position: relative;
+  top: -10px;
+  left: 10px;
+  background-color: black;
+  box-shadow: 2px 2px 5px grey,
+  inset 2px 2px 5px brown;
+}
+
+li:first-child {
+  background-color: none;
+  background-image: -linear-gradient(to right,red 50%, orange 50%, green 70%);
+}
+
+div {
+  background-color: green;
+  width: 800px;
+  margin:0 auto;
+  padding: 15px;
+}
+
+ul {
+  background-color: green;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+}
+
+li {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: maroon;
+  margin: 0;
+  float: left;
+}
+
+li:nth-child(2n) {
+  background-color: orange;
+}
+
+ul:nth-child(2n) li:nth-child(1n) {
+  background: orange;
+}
+
+ul:nth-child(2n) li:nth-child(2n) {
+  background-color: maroon;
+}
