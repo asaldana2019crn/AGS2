@@ -12,6 +12,8 @@ li {
   width: 200px;
   height: 200px;
   float: left;
+  background-size: 100px;
+  box-shadow:
 }
 
 a {
@@ -25,17 +27,19 @@ a {
 */
 #a01 {
   background-image: url(img/a01.png);
-  background-size: 100%;
 }
 #a02 {
   background-image: url(img/a02.png);
-  background-size: 100%;
 }
 #a03 {
   background-image: url(img/a03.png);
-  background-size: 100%;
 }
 #a04 {
   background-image: url(img/a04.png);
-  background-size: 100%;
+}
+#a05 {
+  background-image: url(img/a05.png);
+}
+#a06 {
+  background-image: url(img/a06.png);
 }
