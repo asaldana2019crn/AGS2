@@ -11,25 +11,6 @@ ul {
 
 li {
   background-color: grey;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  ,
   display: block;
   margin: 10px;
   width: 200px;
@@ -54,6 +35,9 @@ a {
   clear: both;
 }
 */
+#a00 {
+  background-image: url(img/a00.png);
+}
 #a01 {
   background-image: url(img/a01.png);
 }
@@ -71,4 +55,19 @@ a {
 }
 #a06 {
   background-image: url(img/a06.png);
+}
+#a07 {
+  background-image: url(img/a07.png);
+}
+#a08 {
+  background-image: url(img/a08.png);
+}
+#a09 {
+  background-image: url(img/a09.png);
+}
+#a10 {
+  background-image: url(img/a10.png);
+}
+#a11 {
+  background-image: url(img/a11.png);
 }
