@@ -10,6 +10,8 @@ ul {
 }
 
 li {
+	background-size: cover;
+	background-repeat: no-repeat;
   background-color: grey;
   display: block;
   margin: 10px;
@@ -22,13 +24,25 @@ li {
 
 }
 
-a {
+div {
+	background-color: green;
+	border-radius: 10px;
+}
 
+a {
   font-size: 20px;
   height: 200px;
   display: block;
-  text-decoration: none;
+}
+	a link {
+		text-decoration: none;
+	}
 
+h1,h2 {
+	text-align: center;
+	background-color: Green;
+	color: white;
+	border-radius: 50px;
 }
 /*
 .anulador {
