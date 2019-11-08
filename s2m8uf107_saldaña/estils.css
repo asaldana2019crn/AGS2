@@ -1,0 +1,34 @@
+/*Mòbil Verticals*/
+@media screen and (max-width:640px) and (orientation: portrait) {
+	body{
+		background-color: green;
+	}
+}
+
+/*Mòbil Apaisats*/
+@media screen and (max-width:640px) and (orientation: landscape){
+	body{
+		background-color: greenyellow;
+	}
+}
+
+/*Tablets Verticals*/
+@media screen and (min-width:641px) and (max-width:1200px) and (orientation: portrait){
+	body{
+		background-color: blue;
+	}
+}
+
+/*Tablets Apaisades*/
+@media screen and (min-width:641px) and (max-width:1200px) and (orientation: landscape){
+	body{
+		background-color: lightblue;
+	}
+}
+
+/*Escriptori*/
+@media screen and (min-width:1201px) {
+	body{
+		background-color: red;
+	}
+}
