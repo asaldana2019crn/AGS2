@@ -1,5 +1,5 @@
 body {
-  background-color: lightgreen;
+  background-color: #ff8000;
 }
 
 ul {
@@ -10,39 +10,44 @@ ul {
 }
 
 li {
-	background-size: cover;
-	background-repeat: no-repeat;
   background-color: grey;
   display: block;
   margin: 10px;
   width: 200px;
   height: 200px;
   float: left;
-  background-size: 100px;
+	background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 20px 20px 20px;
-  box-shadow: 0px 0px 10px white;
+  
 
 }
 
 div {
-	background-color: green;
+	background-color: #ff8000;
 	border-radius: 10px;
 }
 
 a {
-  font-size: 20px;
+  font-size: 25px;
   height: 200px;
   display: block;
+	text-decoration: none;
+	color: rgba(0,0,0,0);
 }
-	a link {
-		text-decoration: none;
+
+	a:hover {
+		color: white;
+		background-color: rgba(0, 0, 0, 0.6);
+		border-radius: 20px 20px 20px;
+		text-align: center;
+
 	}
 
 h1,h2 {
+	font-family:"Cabin Sketch";
 	text-align: center;
-	background-color: Green;
 	color: white;
-	border-radius: 50px;
 }
 /*
 .anulador {
