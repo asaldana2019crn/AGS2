@@ -1,0 +1,26 @@
+body{
+	background-color: #415671;
+	font-family: 'Red Hat Text', sans-serif;
+	font-size: 1em;
+}
+
+.contingut {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	background-color: #415671;
+}
+
+h1 {
+	margin-top: 40%;
+	text-align: center;
+	font-size: 4em;
+	line-height: 4em;
+	font-weight: 700;
+	background-image: url(../img/logo.png);
+ 	background-repeat: no-repeat;
+	background-position: center;
+}
