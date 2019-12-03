@@ -1,0 +1,151 @@
+body {
+	background-color: #222;
+	color: #FFF;
+	font-family: Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+.cap {
+	background-color: rgba(0, 0, 0, 0.50);
+	width: 100%;
+	height: 50px;
+	position: fixed;
+}
+	.icono {
+		background-image: url(img/logo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		float: left;
+		width: 50px;
+		height: 50px;
+
+			margin-left: 20px;
+			margin-right: 20px;
+
+	}
+	 .links {
+		position: static;
+		float: left;
+		margin-left: 5px;
+		line-height: 50px;
+
+	}
+		.links a:hover {
+			color: #FFF;
+			text-decoration: underline;
+		}
+		.links a:active {
+			color: #CCC;
+		}
+
+	.links2 {
+		position: static;
+		float: right;
+		margin-right: 5px;
+		line-height: 50px;
+	}
+
+	.di {
+		position: static;
+		float: left;
+		margin-top: 3%;
+		margin-left: 2%;
+		clear: both;
+	}
+		.doc {
+			position: static;
+			float: left;
+			margin-left: 20px;
+			width: 175px;
+		}
+			.foto {
+				width: 175px;
+				height: 260px;
+				border-radius: 5px;
+			}
+			.h3 {
+				font-size: 14px;
+				color: #CCC;
+				margin-top: 5px;
+			}
+			.p1 {
+				font-size: 11px;
+				color: #CCC;
+			}
+
+
+#fondosv {
+	background-color: gray;
+}
+
+#fondoss {
+	background-color: green;
+}
+
+#fondopv {
+	background-color: rgba(0, 0, 0, 0.80);
+}
+
+#fondopp {
+	background-color: red;
+}
+
+#foto1{
+	background-image: url(img/1982Koyaanisqatsi.jpg);
+}
+
+#foto2{
+	background-image: url(img/2004YTuQueSabes.jpg);
+}
+
+#foto3{
+	background-image: url(img/2005Earthlings.jpg);
+}
+
+#foto4{
+	background-image: url(img/2007Helvetica.jpg);
+}
+
+#foto5{
+	background-image: url(img/2007Sicko.jpg);
+}
+
+#foto6{
+	background-image: url(img/2008Zeitgeist2.jpg);
+}
+
+#foto7{
+	background-image: url(img/2009ArtAndCopy.jpg);
+}
+
+#foto8{
+	background-image: url(img/2009Home.jpg);
+}
+
+#foto9{
+	background-image: url(img/2009RipARemixManifesto.jpg);
+}
+
+#foto10{
+	background-image: url(img/2010ComprarTirarComprar.jpg);
+}
+
+#foto11{
+	background-image: url(img/2010InsideJob.jpg);
+}
+
+#foto12{
+	background-image: url(img/2011LaDoctrinaDeShock.jpg);
+}
+
+#foto13{
+	background-image: url(img/2012SearchingForSugarMan.jpg);
+}
+
+#foto14{
+	background-image: url(img/2012TheActOfKilling.jpg);
+}
+
+#foto15{
+	background-image: url(img/2013ElEspirituDel45.jpg);
+}
