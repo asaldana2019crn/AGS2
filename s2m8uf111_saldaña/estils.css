@@ -1,0 +1,177 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+div{
+  overflow: visible;
+  position: relative;
+}
+
+.esquerra{
+  float: left;
+  clear: left;
+}
+
+.dreta{
+  float: right;
+  clear: right;
+}
+
+.cap{
+  width: 500px;
+  height: 800px;
+  background-image: linear-gradient(#F5D0A9 70%, #000000 30%);
+  margin: 0 auto;
+  border-radius: 200px 200px 200px 250px / 15% 15% 60% 60%;
+  margin-top: 50px;
+}
+
+.pel{
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 140px 140px 0 0;
+}
+
+.flequillo{
+  width: 250px;
+  height: 50px;
+  border-radius: 0 40% 50% / 10%  90% 80%;
+  background-color: #F5D0A9;
+  top: 190px;
+  float: left;
+}
+
+
+.celles{
+  height: 40px;
+  clear: both;
+  margin: 0;
+  position: relative;
+  top: 30px;
+}
+
+.cella{
+  width: 160px;
+  background-color: ;
+  height: 50px;
+  border-radius: 50%;
+  border-top: solid 25px rgb(0, 0, 0);
+  margin: 10px;
+  animation: cella 1s infinite; 
+}
+
+.ojo{
+  height: 80px;
+  width: 90px;
+  margin: auto;
+  background: #FFF;
+  border-top: solid 6px #000000;
+  transform: rotate(45deg);
+  border-radius: 80% 0;
+  margin: auto;
+  margin: 60px;
+  bottom: 60px;
+}
+
+  .ojo:after {
+    content: '';
+    display: block;
+    background: #222;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    transform: translate(33px, 33px);
+    border-radius: 50%;
+    
+  }
+  .ojo:before {
+    content: '';
+    display: block;
+    background: linear-gradient(20deg, rgb(112, 64, 17) 60%, rgb(121, 79, 35) 40%);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: translate(21px, 21px);
+    border-radius: 50%;
+    animation: ojo 5s infinite;
+  }
+
+
+.orelles{
+  height: 100px;
+  background-color:;
+}
+
+.orella{
+  height: 170px;
+  width: 80px;
+  top: -170px;
+  margin: -40px;
+  background-color: #F5D0A9;
+  position: relative;
+  border-radius: 300px 300px 900px 900px;
+}
+
+.nas{
+  border-radius: 40%;
+  border-top: 40px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 130px solid rgb(231, 189, 144);
+  transform: rotate(270deg);
+  top: -20px;
+  bottom: 30px;
+}
+
+.boca{
+  height: 60px;
+	width: 200px;
+	border-radius: 0 0 50px 50px;
+	background-color: pink;
+	box-shadow: inset 0 20px 0px white;
+  top: 200px;
+  margin: 0 auto;
+  animation: boca 1s infinite;
+}
+
+.pelo1 {
+  height: 150px;
+  width: 300px ;
+  background-color: #000000;
+  
+}
+
+.barbilla {
+  width: 70px;
+	height: 50px;
+	background-color:;
+	border-radius: 50%;
+	box-shadow: inset 0 10px 0px #F4C99F;
+	top: 230px;
+	left: 42%;
+}
+
+@keyframes cella {
+  0% {
+    top: 10px;
+  }
+  50% {
+    top: -40px;
+  }
+  100% {
+    top: 10px;
+  }
+
+
+}
+@keyframes boca{
+  0%{
+    box-shadow: inset 0 20px 0px white;
+  }
+  50%{
+    box-shadow: inset 0 0 0 white;
+  }
+  100%{
+    box-shadow: inset 0 20px 0px white;
+  }
+}
