@@ -1,0 +1,144 @@
+.flor{
+	transform: scale(1);
+	width: 204px;
+	height: 204px;
+	margin: 200px auto;
+	animation: rotacio 2s infinite linear;
+	transform-origin: center center;
+}
+
+.petal {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: green;
+	border-radius: 0 100px 0 100px;
+	transform-origin: right bottom;
+	border: solid 2px yellow;
+	animation-name: aniflor;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+#p01 {
+	transform: rotate(0deg);
+}
+
+#p02 {
+	transform: rotate(30deg);
+}
+
+#p03 {
+	transform: rotate(60deg);
+}
+
+#p04 {
+	transform: rotate(90deg);
+}
+
+#p05 {
+	transform: rotate(120deg);
+}
+
+#p06 {
+	transform: rotate(150deg);
+}
+
+#p07 {
+	transform: rotate(180deg);
+}
+
+#p08 {
+	transform: rotate(210deg);
+}
+
+#p09 {
+	transform: rotate(240deg);
+}
+
+#p10 {
+	transform: rotate(270deg);
+}
+
+#p11 {
+	transform: rotate(300deg);
+}
+
+#p12 {
+	transform: rotate(330deg);
+}
+
+#cor {
+	width: 50px;
+	height: 50px;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	top: 75px;
+	left: 75px;
+}
+
+
+@keyframes aniflor {
+	0% {
+		background: red;
+	}
+	50% {
+		background: pink;
+	}
+	100% {
+		background: purple;
+	}
+}
+
+@keyframes rotacio {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+
+}
+
+
+.heart {
+	margin-left: 40%;
+	animation: latir 2s infinite;
+	width: 150px;
+	height: 150px;
+}
+.p1 {
+	position: absolute;
+  width: 100px;
+  height: 150px;
+	border-radius: 50px 50px 0 0;
+  transform: rotate(45deg);
+  background: red;
+}
+
+.p2 {
+	position: absolute;
+	width: 100px;
+  height: 150px;
+	border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  background: red;
+}
+
+.love {
+	transform-origin: 50px 100px;
+}
+
+@keyframes latir {
+  0% {
+  	transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+  	transform: scale(0.5);
+  }
+}
