@@ -1,0 +1,166 @@
+body{
+	background-color: #34495E;
+	padding-top: 2%;
+}
+
+#pantalla {
+	width: 100%;
+	position: static;
+	margin: 0 auto;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	background-color: rgb(252, 252, 252);
+	border-radius: 20px;
+}
+
+#tema{
+	margin-left: 3.5%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+#principal{
+	background-color: #E5E7E9;
+	width: 90%;
+	height: 200px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px;
+	margin: auto;
+	border-top: solid 40px #566573;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50),
+			inset 0px 4px 2px rgba(0, 0, 0, 0.50);
+}
+
+.tema{
+	background-color: #E5E7E9;
+	width: 20%;
+	height: 200px;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 10px;
+	display: inline-block;
+	box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.40);
+}
+
+.principal{
+	width: 20rem;
+	min-height: 4rem;
+	border-radius: 2rem;
+	margin: 0.5em;
+}
+
+.bocadillo{
+	width: 60%;
+	min-height: 2rem;
+	border-radius: 0.5rem;
+	margin: 0.5em;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.50);
+}
+
+
+.izquierdo{
+	transform: scale(1,1);
+	background-color: white;
+	filter: opacity(20%) ;
+}
+.derecho{
+	transform: scale(-1,1);
+	background-color: white;
+	filter: opacity(50%);
+	float: right;
+}
+
+.boton{
+	background-color: transparent;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border: solid 6px white;
+	margin: 0 auto;
+	margin-top: 85px;
+	box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.40);
+}
+
+.slider {
+	width: 100%;
+	height: 4.5rem;
+	background-color:;
+	overflow-x: scroll;
+	margin: 0;
+	padding-bottom: 15px;
+	display: none;
+}
+	.slider::-webkit-scrollbar{
+		display: none;
+	}
+
+.bolas {
+	height: 4.5rem;
+	width: 90%;
+	display: none;
+	position: relative;
+	margin: 0 auto;
+	border-radius: 20px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.40);
+	
+}
+
+	.bola {
+		width: 3.5rem;
+		height: 3.5rem;
+		border-radius: 50%;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+		margin: 7px 55px;
+		display: inline-block;
+	}
+
+		#bolasmono{
+			background-color: rgb(211, 211, 211);
+		}
+
+		#bolasdark{
+			background-color: #5D6D7E;
+		}
+
+		#bolasartic{
+			background-color: #D6EAF8;
+		}
+
+		
+#default{
+  background-color: #E5E7E9;
+}
+
+#mono{
+  background-color: #BB8FCE;
+}
+
+#dark{
+  background-color: #5D6D7E;
+}
+
+#artic{
+  background-color: #D6EAF8;
+}
+
+	
+input[type=color] {
+	border-radius: 50%;
+}
+
+input[type=color]:focus{
+	-webkit-appearance: none;
+	outline: none;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper{
+	border-radius: 50%;
+	padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch{
+	border: none;
+	border-radius: 50%;
+}
+
+ 

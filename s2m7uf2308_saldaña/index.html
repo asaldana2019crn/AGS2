@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Aitor SC">
+		<title>Conf Chat</title>
+		<link rel="stylesheet" href="estils.css" />
+	</head>
+	<body>
+
+	<div id="pantalla">
+		<div id="principal">
+			<div class="bocadillo izquierdo" id="b1"></div>
+			<div class="bocadillo derecho" id="b2"></div>
+		</div>
+
+
+		<div id="tema">
+			<div class="tema" id="default">
+				<div class="bocadillo izquierdo" id="b1"></div>
+				<div class="bocadillo derecho" id="b2"></div>
+				<div class="boton" id="boton1"></div>
+			</div>
+			<div class="tema" id="mono">
+				<div class="bocadillo izquierdo" id="b1"></div>
+				<div class="bocadillo derecho" id="b2"></div>
+				<div class="boton" id="boton2"></div>
+			</div>
+			<div class="tema" id="dark">
+				<div class="bocadillo izquierdo" id="b1"></div>
+				<div class="bocadillo derecho" id="b2"></div>
+				<div class="boton" id="boton3"></div>
+			</div>
+			<div class="tema" id="artic">
+				<div class="bocadillo izquierdo" id="b1"></div>
+				<div class="bocadillo derecho" id="b2"></div>
+				<div class="boton" id="boton4"></div>
+			</div>
+		</div>
+
+	<div class="slider">
+		<ul id=bolasmono class="bolas">
+			<li class="bola bolamono" id="bola1"></li>
+			<li class="bola bolamono" id="bola2"></li>
+			<li class="bola bolamono" id="bola3"></li>
+			<li class="bola bolamono" id="bola4"></li>
+			<li class="bola bolamono" id="bola5"></li>
+			<input type="color" class="bola" id="monocolor" value="#FF1493">
+		</ul>
+	</div>		
+
+	<div class="slider">
+		<ul id=bolasdark class="bolas">
+			<li class="bola boladark" id="bola1d"></li>
+			<li class="bola boladark" id="bola2d"></li>
+			<li class="bola boladark" id="bola3d"></li>
+			<li class="bola boladark" id="bola4d"></li>
+			<li class="bola boladark" id="bola5d"></li>
+			<input type="color" class="bola" id="darkcolor" value="#FF1493">
+		</ul>
+	</div>
+
+	<div class="slider">
+		<ul id=bolasartic class="bolas">
+			<li class="bola bolaartic" id="bola1a"></li>
+			<li class="bola bolaartic" id="bola2a"></li>
+			<li class="bola bolaartic" id="bola3a"></li>
+			<li class="bola bolaartic" id="bola4a"></li>
+			<li class="bola bolaartic" id="bola5a"></li>
+			<input type="color" class="bola" id="articcolor" value="#FF1493">
+		</ul>
+	</div>
+</div>
+
+		<script type="text/javascript" language="javascript">
+
+		//Temas de colores predefinidos
+			document.getElementById('default').addEventListener('click',DEFAULT);
+				function DEFAULT(){
+					document.getElementById("b1").style.backgroundColor = ("white")
+					document.getElementById("b2").style.backgroundColor = ("white")
+					document.getElementById("principal").style.background = ("#E5E7E9")
+						document.getElementById("boton1").style.backgroundColor = ("#AEB6BF")
+						document.getElementById("boton2").style.backgroundColor = ("transparent")
+						document.getElementById("boton3").style.backgroundColor = ("transparent")
+						document.getElementById("boton4").style.backgroundColor = ("transparent")
+							document.getElementById('bolasmono').style.display="none";
+								document.getElementById('mono').style.backgroundColor = ("#BB8FCE")
+							document.getElementById('bolasdark').style.display="none";
+							document.getElementById('bolasartic').style.display="none";
+			}
+
+			document.getElementById('mono').addEventListener('click',MONO);
+				function MONO(){
+					document.getElementById("b1").style.backgroundColor = ("white")
+					document.getElementById("b2").style.backgroundColor = ("white")
+					document.getElementById("principal").style.background = ("#BB8FCE")
+						document.getElementById("boton2").style.backgroundColor = ("#AEB6BF")
+						document.getElementById("boton1").style.backgroundColor = ("transparent")
+						document.getElementById("boton3").style.backgroundColor = ("transparent")
+						document.getElementById("boton4").style.backgroundColor = ("transparent")
+							slider[0].style.display="block";
+							slider[1].style.display="none";
+							slider[2].style.display="none";
+							document.getElementById('bolasmono').style.display="block";
+							document.getElementById('bolasdark').style.display="none";
+							document.getElementById('bolasartic').style.display="none";
+			}
+
+			document.getElementById('dark').addEventListener('click',DARK);
+				function DARK(){
+					document.getElementById("principal").style.background = ("#5D6D7E")
+						document.getElementById("boton3").style.backgroundColor = ("#BFC9CA")
+						document.getElementById("boton1").style.backgroundColor = ("transparent")
+						document.getElementById("boton2").style.backgroundColor = ("transparent")
+						document.getElementById("boton4").style.backgroundColor = ("transparent")
+							slider[0].style.display="none";
+							slider[1].style.display="block";
+							slider[2].style.display="none";
+							document.getElementById('bolasdark').style.display="block";
+							document.getElementById('bolasmono').style.display="none";
+							document.getElementById('bolasartic').style.display="none";
+			}
+
+			document.getElementById('artic').addEventListener('click',ARTIC);
+				function ARTIC(){
+					document.getElementById("principal").style.background = ("#D6EAF8")
+						document.getElementById("boton4").style.backgroundColor = ("#5DADE2")
+						document.getElementById("boton1").style.backgroundColor = ("transparent")
+						document.getElementById("boton2").style.backgroundColor = ("transparent")
+						document.getElementById("boton3").style.backgroundColor = ("transparent")
+							slider[0].style.display="none";
+							slider[1].style.display="none";
+							slider[2].style.display="block";
+							document.getElementById('bolasartic').style.display="block";
+							document.getElementById('bolasmono').style.display="none";
+							document.getElementById('bolasdark').style.display="none";
+			}
+
+		//Variables matriciales que guardan las bolas de colores
+			var color=["#E74C3C","#F4D03F","#F39C12","#138D75","#283747"];
+
+		// Colores bolasmono	
+			var puntmono=document.getElementsByClassName('bolamono');
+
+				for (var k = 0; k < puntmono.length; k++) {
+					puntmono[k].style.backgroundColor=color[k];
+				}
+
+		// Colores bolasdark
+			var puntdark=document.getElementsByClassName('boladark');
+
+				for (var k = 0; k < puntdark.length; k++) {
+					puntdark[k].style.backgroundColor=color[k];
+				}
+
+		// Colores bolasartic
+			var puntartic=document.getElementsByClassName('bolaartic');
+
+				for (var k = 0; k < puntartic.length; k++) {
+					puntartic[k].style.backgroundColor=color[k];
+				}
+
+
+
+		//Variables Sliders
+			var slider=document.getElementsByClassName('slider');
+				
+
+		//COLORES MONO
+			document.getElementById('bola1').addEventListener('click',COLORMONO);
+				function COLORMONO(){
+					document.getElementById("principal").style.backgroundColor = (color[0]);
+					document.getElementById("mono").style.backgroundColor = (color[0]);
+				}
+
+			document.getElementById('bola2').addEventListener('click',COLORMONO1);
+				function COLORMONO1(){
+					document.getElementById("principal").style.backgroundColor = (color[1]);
+					document.getElementById("mono").style.backgroundColor = (color[1]);
+				}
+
+			document.getElementById('bola3').addEventListener('click',COLORMONO2);
+				function COLORMONO2(){
+					document.getElementById("principal").style.backgroundColor = (color[2]);
+					document.getElementById("mono").style.backgroundColor = (color[2]);
+				}
+
+			document.getElementById('bola4').addEventListener('click',COLORMONO3);
+				function COLORMONO3(){
+					document.getElementById("principal").style.backgroundColor = (color[3]);
+					document.getElementById("mono").style.backgroundColor = (color[3]);
+				}
+
+			document.getElementById('bola5').addEventListener('click',COLORMONO4);
+				function COLORMONO4(){
+					document.getElementById("principal").style.backgroundColor = (color[4]);
+					document.getElementById("mono").style.backgroundColor = (color[4]);
+				}
+
+			document.getElementById('monocolor').addEventListener('input',COLORMONOFAV);
+				function COLORMONOFAV(){
+					document.getElementById("principal").style.backgroundColor=monocolor.value;
+					document.getElementById("mono").style.backgroundColor=monocolor.value;
+				}
+
+
+
+		//COLORES DARK
+			document.getElementById('bola1d').addEventListener('click',COLORDARK);
+				function COLORDARK(){
+					document.getElementById("b1").style.backgroundColor = (color[0]);
+					document.getElementById("b2").style.backgroundColor = (color[0]);
+				}
+
+			document.getElementById('bola2d').addEventListener('click',COLORDARK1);
+				function COLORDARK1(){
+					document.getElementById("b1").style.backgroundColor = (color[1]);
+					document.getElementById("b2").style.backgroundColor = (color[1]);
+				}
+
+			document.getElementById('bola3d').addEventListener('click',COLORDARK2);
+				function COLORDARK2(){
+					document.getElementById("b1").style.backgroundColor = (color[2]);
+					document.getElementById("b2").style.backgroundColor = (color[2]);
+				}
+
+			document.getElementById('bola4d').addEventListener('click',COLORDARK3);
+				function COLORDARK3(){
+					document.getElementById("b1").style.backgroundColor = (color[3]);
+					document.getElementById("b2").style.backgroundColor = (color[3]);
+				}
+
+			document.getElementById('bola5d').addEventListener('click',COLORDARK4);
+				function COLORDARK4(){
+					document.getElementById("b1").style.backgroundColor = (color[4]);
+					document.getElementById("b2").style.backgroundColor = (color[4]);
+				}
+
+			document.getElementById('darkcolor').addEventListener('input',COLORDARKFAV);
+				function COLORDARKFAV(){
+					document.getElementById("b1").style.backgroundColor=darkcolor.value;
+					document.getElementById("b2").style.backgroundColor=darkcolor.value;
+				}
+
+
+
+		//COLORES ARTIC
+			document.getElementById('bola1a').addEventListener('click',COLORARTIC);
+				function COLORARTIC(){
+					document.getElementById("b1").style.backgroundColor = (color[0]);
+					document.getElementById("b2").style.backgroundColor = (color[0]);
+				}
+
+			document.getElementById('bola2a').addEventListener('click',COLORARTIC1);
+				function COLORARTIC1(){
+					document.getElementById("b1").style.backgroundColor = (color[1]);
+					document.getElementById("b2").style.backgroundColor = (color[1]);
+				}
+
+			document.getElementById('bola3a').addEventListener('click',COLORARTIC2);
+				function COLORARTIC2(){
+					document.getElementById("b1").style.backgroundColor = (color[2]);
+					document.getElementById("b2").style.backgroundColor = (color[2]);
+				}
+
+			document.getElementById('bola4a').addEventListener('click',COLORARTIC3);
+				function COLORARTIC3(){
+					document.getElementById("b1").style.backgroundColor = (color[3]);
+					document.getElementById("b2").style.backgroundColor = (color[3]);
+				}
+
+			document.getElementById('bola5a').addEventListener('click',COLORARTIC4);
+				function COLORARTIC4(){
+					document.getElementById("b1").style.backgroundColor = (color[4]);
+					document.getElementById("b2").style.backgroundColor = (color[4]);
+				}
+
+			document.getElementById('articcolor').addEventListener('input',COLORARTICFAV);
+				function COLORARTICFAV(){
+					document.getElementById("b1").style.backgroundColor=articcolor.value;
+					document.getElementById("b2").style.backgroundColor=articcolor.value;
+				}
+				
+			
+
+			
+	</script>
+
+	</body>
+</html>
