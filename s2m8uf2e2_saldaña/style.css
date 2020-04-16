@@ -1,0 +1,117 @@
+/* 
+Theme Name:   Examen
+Description:  Examen.
+Author:       Aitor
+Version:      1.0
+License:      Copia
+Tags:         coches
+*/
+
+
+@import url("estil.css");
+@import url("960_12_col.css");
+
+
+
+body {
+  background:linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,192,203,1) 50%, rgba(255,192,203,1) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  .caixa {
+    height: 240px;
+    margin-top: 60px;
+    
+  }
+
+.header {
+      background-image: url(images/gif.gif);
+      background-size: cover;
+      height: 589px; 
+     }
+
+
+.coches {
+  height: 240px;
+
+}
+
+.foto {
+    background-size: contain;
+        height: 200px;
+        -webkit-filter: saturate(40%);
+        -webkit-transition: -webkit-transform .7s ease-in-out;
+        transition: transform .7s ease-in-out;
+        
+}
+    .f1 {
+        background-image: url(images/small_pulp.jpg);
+    }
+
+    .f2 {
+    background-image: url(images/small_taxi.jpg);
+    }
+
+    .f3 {
+    background-image: url(images/small_bond.jpg);
+    }
+
+    .f4 {
+    background-image: url(images/small_ghost.jpg);
+    }
+
+    .f5 {
+    background-image: url(images/small_bean.jpg);
+    }
+
+    .f6 {
+    background-image: url(images/small_back.jpg);
+    }
+
+    .f7 {
+      background-image: url(images/small_rider.jpg);
+      }
+
+    .f8 {
+      background-image: url(images/small_team.jpg);
+      }
+
+    .f9 {
+      background-image: url(images/small_break.jpg);
+      }
+
+
+.foto:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+    -webkit-filter: contrast(150%);
+}
+
+h1 {
+  color: black;
+  font-size: 4rem;
+}
+
+
+p{
+  margin-top: 200px;
+  background-color: #DDDFE7;
+  height: 40px;
+  font-size: 1em;
+}
+
+
+.pie {
+  background-color: pink;
+  height: 220px;
+  margin-top: 50px;
+}
+
+.logo {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-image: url(images/logo_carsandfilms.png);
+}
+
+
+
