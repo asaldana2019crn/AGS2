@@ -1,0 +1,136 @@
+/*Mòbil Verticals*/
+@media screen and (max-width:640px) and (orientation: portrait) {
+	body{
+		background-color: green;
+	}
+}
+/*Mòbil Apaisats*/
+@media screen and (max-width:640px) and (orientation: landscape){
+	body{
+		background-color: greenyellow;
+	}
+}
+/*Tablets Verticals*/
+@media screen and (min-width:641px) and (max-width:1200px) and (orientation: portrait){
+	body{
+		background-color: blue;
+	}
+}
+/*Tablets Apaisades*/
+@media screen and (min-width:641px) and (max-width:1200px) and (orientation: landscape){
+	body{
+		background-color: lightblue;
+	}
+}
+/*Escriptori*/
+@media screen and (min-width:1201px) {
+	body{
+		background-color: red;
+	}
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+}
+
+/* index.html */
+
+.contingut {
+	position: relative;
+	top: 30%;
+	width: 8cm;
+	height: 6cm;
+	margin: auto;
+	background-color: white;
+	background-image: url(../img/Marca.png);
+	background-size: cover;
+	
+}
+
+.version {
+	font-family: 'Roboto', sans-serif;
+	color: #757574;
+	line-height: 2em;
+	text-align: center;
+	margin-top: 100%;
+}
+
+
+/* login.html */
+
+.cuerpologin {
+	margin: 0 auto;
+	width: 9cm;
+}
+
+.logo_marca {
+	position: relative;
+	width: 8cm;
+	height: 6cm;
+	margin: 0 auto;
+	background-image: url(../img/Marca.png);
+	background-size: cover;
+	margin-top: 1.5cm;	
+}
+
+.barra {
+	position: relative;
+	height: 0.20cm;
+	margin: 0 auto;
+	margin-top: 1.5cm;
+	background: linear-gradient(88.68deg, #36B07E 0%, #5EB45A 100%);
+}
+
+.titulo {
+	color: #36B07E;
+	font-size: 20pt;
+	font-weight: 600;
+	margin-top: 1.5cm;
+	margin-bottom: 0.2cm;
+}
+
+.bóton {
+	height: 1.3cm;
+	width: 100%;
+	border-radius: 50px;
+	margin-top: 0.5cm;	
+}
+
+input {
+	font-weight: 100;
+}
+
+#caudro_texto {
+	border: 1px solid #757574;
+	box-sizing: border-box;
+	font-size: 18pt;
+	font-weight: lighter;
+	font-family: 'Roboto', sans-serif;
+	outline: none;
+
+}
+
+#bóton_verde {
+	background: linear-gradient(88.68deg, #36B07E 0%, #5EB45A 100%);
+	outline: none;
+	color: white;
+	font-size: 20pt;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+#recu {
+	color: #757574;
+	font-size: 18pt;
+	margin-top: 0.7cm;
+	font-weight: 150;
+	text-align: center;
+}
+
+.peulogin {
+	text-align: center;
+	margin-top: 3.5cm;
+
+}
