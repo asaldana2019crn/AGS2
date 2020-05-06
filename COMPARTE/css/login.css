@@ -1,34 +1,3 @@
-/*Mòbil Verticals*/
-@media screen and (max-width:640px) and (orientation: portrait) {
-	body{
-		background-color: green;
-	}
-}
-/*Mòbil Apaisats*/
-@media screen and (max-width:640px) and (orientation: landscape){
-	body{
-		background-color: greenyellow;
-	}
-}
-/*Tablets Verticals*/
-@media screen and (min-width:641px) and (max-width:1200px) and (orientation: portrait){
-	body{
-		background-color: blue;
-	}
-}
-/*Tablets Apaisades*/
-@media screen and (min-width:641px) and (max-width:1200px) and (orientation: landscape){
-	body{
-		background-color: lightblue;
-	}
-}
-/*Escriptori*/
-@media screen and (min-width:1201px) {
-	body{
-		background-color: red;
-	}
-}
-
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: white;
@@ -58,7 +27,6 @@ a {
 	text-align: center;
 	position: static;
 	margin-top: 6cm;
-	
 }
 
 
@@ -98,7 +66,7 @@ a {
 		color: #36B07E;
 	}
 
-.bóton {
+.boton {
 	height: 1.3cm;
 	width: 100%;
 	border-radius: 50px;
@@ -124,7 +92,7 @@ input[type="checkbox"] {
 	outline: none;
 }
 
-#bóton_verde {
+#boton_verde {
 	background: linear-gradient(88.68deg, #36B07E 0%, #5EB45A 100%);
 	outline: none;
 	color: white;
@@ -194,7 +162,7 @@ input[type="checkbox"] {
 	font-family: 'Roboto', sans-serif;
 }
 
-	.bóton img {
+	.boton img {
 		position: absolute;
 		left: 93.65%;
 		right: 4.01%;
@@ -209,7 +177,18 @@ input[type="checkbox"] {
 		margin-bottom: 4em;
 	}
 
-	/* descubre.html */
+	.boton_centrado{
+		position: fixed;
+		left: 39.5%;
+		margin-top: 460px;
+		height: 40px;
+		width: 300px;
+		border-radius: 50px;
+		text-align: center;
+		line-height: 50px;
+	}
+
+/* descubre.html / descubre_gift.html */
 	.gray{
 		background-color: #F4F4F6;
 	}
@@ -238,18 +217,18 @@ input[type="checkbox"] {
 			margin-top: 6px;
 		}
 		#buscar{
-			width: 66%;
-			height: 48px;
-			text-align: center;
-			justify-content: center;
+			width: 68%;
+			height: 45px;
+			padding-left: 20px;
 			margin-top: 6px;
-			margin-right: 14%;
+			margin-right: 10%;
 			border-radius: 50px;	
 			border: 1px solid #757574;
 			font-size: 20px;
-			font-family: Roboto;
-			font-style: normal;
+			font-family: 'Roboto';
+			outline: none;
 			float: right;
+			
 		}
 
 	.menus_cambio{
@@ -258,7 +237,7 @@ input[type="checkbox"] {
 		position: fixed;
 		margin-top: 70px;
 		background-color: #F4F4F6;
-		padding-top: 20px;
+		padding-top: 17px;
 		}
 
 		.line{
@@ -267,7 +246,7 @@ input[type="checkbox"] {
 			background: linear-gradient(83.88deg, #36B07E 0.89%, #5EB45A 99.39%);
 			border-radius: 50px;
 			position: fixed;
-			margin-left: 48%;
+			margin-left: 50%;
 		}
 		
 		.cambio{
@@ -275,7 +254,6 @@ input[type="checkbox"] {
 			height: 30px;
 			text-align: center;
 			border-radius: 50px;
-	
 			font-style: normal;
 			font-weight: bold;
 			font-size: 16px;
@@ -292,7 +270,19 @@ input[type="checkbox"] {
 		}
 		#sep2{
 			float: right;
-			margin-right: 14%;
+			margin-right: 10%;
+			border: 1px solid #757574;
+			background-color: white;
+			color: #757574;
+		}
+		#sep3{
+			float: right;
+			margin-right: 10%;
+			background: linear-gradient(83.88deg, #36B07E 0.89%, #5EB45A 99.39%);
+		}
+		#sep4{
+			float: left;
+			margin-left: 10%;
 			border: 1px solid #757574;
 			background-color: white;
 			color: #757574;
@@ -301,7 +291,7 @@ input[type="checkbox"] {
  .menus_productos{
 	background-color: #F4F4F6;
 	width: 100%;
-	height: 1700px;
+	height: 100%;
 	position: static;
 	float: left;
 	margin-top: 140px;
@@ -310,13 +300,13 @@ input[type="checkbox"] {
 .km{
 	width: 60px;
 	text-align: center;
-	line-height: 24px;
+	line-height: 27px;
 	border-radius: 50px;
 	height: 25px;
-	background-color: red;
+	font-size: 12px;
 	position: fixed;
 	top: 150px;
-	left: 46%;
+	left: 48.5%;
 	opacity: 70%;
 	color: #757574;
 	background: #F4F4F6;
@@ -325,7 +315,7 @@ input[type="checkbox"] {
 .producto{
 	width: 20%;
 	height: 260px;
-	margin-left: 2%;
+	margin-left: 2.8%;
 	margin-right: 2%;
 	margin-bottom: 3%;
 	float: left;
@@ -375,6 +365,42 @@ input[type="checkbox"] {
 			#img12{
 				background-image: url(../img/juguetes/juguete12.jpg);	
 			}
+			#img13{
+				background-image: url(../img/juguetes/juguete13.jpg);	
+			}
+			#img14{
+				background-image: url(../img/juguetes/juguete14.jpg);	
+			}
+			#img15{
+				background-image: url(../img/juguetes/juguete15.jpg);	
+			}
+			#img16{
+				background-image: url(../img/juguetes/juguete16.jpg);	
+			}
+			#img17{
+				background-image: url(../img/juguetes/juguete17.jpg);	
+			}
+			#img18{
+				background-image: url(../img/juguetes/juguete18.jpg);	
+			}
+			#img19{
+				background-image: url(../img/juguetes/juguete19.jpg);	
+			}
+			#img20{
+				background-image: url(../img/juguetes/juguete20.jpg);	
+			}
+			#img21{
+				background-image: url(../img/juguetes/juguete21.jpg);	
+			}
+			#img22{
+				background-image: url(../img/juguetes/juguete22.jpg);	
+			}
+			#img23{
+				background-image: url(../img/juguetes/juguete23.jpg);	
+			}
+			#img24{
+				background-image: url(../img/juguetes/juguete24.jpg);	
+			}
 
 	  #description{
 		background-color: white;
@@ -390,42 +416,226 @@ input[type="checkbox"] {
 		color: #757574;
 	  }
 
-.select{
-	width: 20%;
-	height: 60px;
-	background-color: mediumseagreen;
-	float: left;
-	background-size: cover;
-	margin: 5px auto;
-}
-
 .menus_tareas{
 	background: #FFFFFF;
 	box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.25);
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	position: fixed;
 	bottom: 0;
+	margin: 0 auto;
+}
+
+.select{
+	width: 20%;
+	height: 80px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #favoritos{
-	background-color: red;
-	background-image: url(../img/barratareas/favoritos.png);
+	background-image: url(../img/barratareas/iconos_favoritos_off.svg);
 }
 #descubre{
-	background-color: BLUE;
-}
-#subirproducto{
+	background-image: url(../img/barratareas/iconos_descubre_on.svg);
 }
 #misjuguetes{
-	background-color: red;
+	background-image: url(../img/barratareas/iconos_misjuguetes_off.svg);
 }
 #chats{
+	background-image: url(../img/barratareas/iconos_chats_off.svg);
 }
 
+#subirproducto{
+	background-image: url(../img/barratareas/iconos_subir.svg);
+	position: fixed;
+	width: 15%;
+	height: 100px;
+	background-repeat: no-repeat;
+	left: 47.4%;
+	bottom: 15px;
+}
+
+
+/* products.html */
+
+.menus_superior2{
+	height: 75px;
+
+}
+
+.flecha_centrado {
+	margin-left: 10%;
+	width: 29px;
+	height: 32px;
+	background-image: url(../img/iconos/flecha.png);
+	background-size: cover;
+	position: fixed;
+	top: 30px;
+}
+
+#user_centrado {
+	position: fixed;
+	width: 48px;
+	height: 48px;
+	top: 20px;
+	margin-left: 49%;
+	background-image: url(../img/perfil/perfil1.png);
+	background-size: cover;
+}
+
+.reporte {
+	float: right;
+	margin-right: 10%;
+	background-image: url(../img/iconos/exclamacion.png);
+	background-size: cover;
+	margin-top: 15px;
+	width: 10px;
+	height: 50px;
+}
+
+.producto_completo {
+	height: 400px;
+	margin-top: 30px;
+	float: left;
+	width: 94.4%;
+	margin-left: 2.8%;
+}
+	.foto_grande {
+		background-color: #36B07E;
+		height: 50%;
+		width: 20%;
+		margin: auto;
+		margin-top: -10px;
+		border-radius: 15px 15px 15px 15px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#description_completa {
+		background-color: white;
+		height: 40%;
+		width: 30%;
+		margin: auto;
+		margin-top: 10px;
+		border-radius: 9px 9px 9px 9px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 50px;
+		color: #757574;
+	}
+
+	.boton_centrado2{
+		position: fixed;
+		margin: auto;
+		margin-top: 470px;
+		height: 40px;
+		width: 300px;
+		border-radius: 50px;
+		text-align: center;
+		line-height: 40px;
+		color: white;
+		font-size: 15pt;
+		font-weight: bold;
+		margin-left: 40%;
+		background: linear-gradient(88.68deg, #36B07E 0%, #5EB45A 100%);
+	}
+
+	.objetos{
+		height: 40px;
+		width: 90%;
+		margin: 0 auto;
+		padding: 15px;
+	}
+
+	.mini_user{
+		height: 30px;
+		width: 40%;
+		margin-left: 4%;
+		background: linear-gradient(88.68deg, #36B07E 0%, #5EB45A 100%);
+		margin-top: 5px;
+		float: left;
+		border-radius: 50px;
+	}
+
+	#avatar{
+		height: 25px;
+		width: 25px;
+		margin-top: 2.5px;
+		margin-left: 13%;
+		border-radius: 50px;
+		background-image: url(../img/perfil/perfil4.png);
+		background-size: cover;
+	}
+
+	#usuario_avatar{
+		height: 25px;
+		width: 70%;
+		margin-top: -25px;
+		margin-left: 25%;
+		float: left;
+	}
+
+	#usuario_avatar p{
+		color:white;
+		height: 25px;
+		width: 70%;
+		line-height: 25px;
+		margin: 0 auto;
+	}
+
+	.mini_items{
+		height: 30px;
+		width: 25%;
+		margin-left: 4%;
+		margin-top: 5px;
+		float: right;
+	}
+
+	.favs{
+		height: 22px;
+		width: 26px;
+		background-image: url(../img/iconos/corazon.png);
+		background-size: cover;
+		float: left;
+		margin-top: 2px;
+		margin-left: 15%;
+	}
+	.sends{
+		height: 22px;
+		width: 21px;
+		background-image: url(../img/iconos/compartir.png);
+		background-size: cover;
+		float: right;
+		margin-top: 2px;
+		margin-right: 15%;
+	}
+
+	#descripcion{
+		margin-top: 25px;
+		margin-left: 25px;
+		line-height: 25px;
+		height: 100px;
+		width: 100%;
+		float: left;
+	}
+
+	#titu{
+		margin-left: 10px;
+	}
+
 @media screen and (max-width:640px) and (orientation: portrait) {
+	
+	/* descubre.html */
+
 	.producto{
 		width: 46%;
+		margin-left: 2%;
 		}
 
 	#sep2{
@@ -444,3 +654,89 @@ input[type="checkbox"] {
 	.km{
 		left: 44%;
 	}
+
+	#subirproducto{
+		left: 42.5%;
+	}
+
+	/* products.html */
+
+	#user_centrado {
+		margin-left: 45%;
+	}
+
+	.reporte {
+		width: 8.1px;
+		height: 40px;
+		margin-top: 26.5px;
+	}
+
+	.boton_centrado2{
+		margin-left: 14%;
+		margin-top: 500px;
+	}
+
+	.objetos {
+	
+	}
+
+	#descripcion{
+		margin-top: 25px;
+		line-height: 25px;
+		height: 100px;
+		width: 100%;
+		float: left;
+		margin-left:3px;
+	}
+
+	.foto_grande {
+		background-color: #36B07E;
+		height: 50%;
+		width: 80%;
+		margin: auto;
+		border-radius: 15px 15px 0px 0px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#description_completa {
+		background-color: white;
+		height: 40%;
+		width: 80%;
+		margin: auto;
+		border-radius: 0px 0px 9px 9px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 50px;
+		color: #757574;
+	}
+
+	/*Movil Verticals*/
+@media screen and (max-width:640px) and (orientation: portrait) {
+	body{
+	}
+}
+/*Movil Apaisats*/
+@media screen and (max-width:640px) and (orientation: landscape){
+	body{
+	}
+}
+/*Tablets Verticals*/
+@media screen and (min-width:641px) and (max-width:1200px) and (orientation: portrait){
+	body{
+	}
+}
+/*Tablets Apaisades*/
+@media screen and (min-width:641px) and (max-width:1200px) and (orientation: landscape){
+	body{
+	}
+}
+/*Escriptori*/
+@media screen and (min-width:1201px) {
+	body{
+	}
+}
