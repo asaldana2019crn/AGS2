@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+        <meta name="theme-color" content="#36B07E">
+		<meta name="msaplication-navbutton-color" content="#36B07E">
+		<link rel="icon" sizes="192x192" href="../img/perfil/avatar.png">
+		<link rel="icon" sizes="512x512" href="../img/perfil/avatar.png">
+        <meta author="Comparte">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/config.css">
+        <link rel="stylesheet" href="../css/recursos.css">
+        <script src="https://kit.fontawesome.com/6c662958dd.js" crossorigin="anonymous"></script>
+        <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+
+		<title>COMPARTE</title>
+
+	</head>
+	<body id='body'>
+
+        <div class="parte_superior">
+            <a href="javascript: history.go(-1)"> 
+                <div class="flecha_atras"> </div>
+            </a>
+        </div>
+        
+            <div class="base">
+                <div id="perfil"></div>	
+                <input type="color" value="#D2D2D2"> </input>
+                <div id="fondobola"></div>
+            </div>
+            
+				<div class="titulo" id="justify"> My data </div>
+
+                    <input class="boton" id="caudro_texto" 
+                        type="text" 
+                        autocomplete="off" 
+                        maxlength="15" 
+                        placeholder="Username"  
+                        required>
+
+                    <input class="boton" id="caudro_texto" 
+                        type="email" 
+                        autocomplete="off"  
+                        placeholder="Email"  
+                        required>
+
+                    <input class="boton" id="caudro_texto" 
+                        type="password" 
+                        autocomplete="off" 
+                        maxlength="15"
+                        pattern="[A-Za-z0-9]{8,15}"
+                        placeholder="Password"  
+                        required>
+
+                    <a href="#">
+                        <input class="boton" id="boton_verde" 
+                            type="submit" 
+                            value="Save">
+                    </a>
+                
+
+                        <div class="ventana2" id="idiomas">
+                                <div class="subtitle2" id="ca" onclick="idiomas()">Spanish</div>
+
+                                <div class="subtitle2" id="en" onclick="idiomas()">English</div>
+                        </div>
+
+                        <div class="ventana" id="noti">
+                                <div class="title">Enable notifications?</div>
+
+                                    <div class="subtitle" id="yes" onclick="noti()">Deny</div>
+
+                                    <div class="subtitle" id="no" onclick="noti()">Accept</div>
+                        </div>
+
+
+
+                <div class="titulo" id="justify" onclick="conf()">Configuration <i class="fas fa-caret-down"></i></div>
+
+                    <div id="conf" style="display:none;">
+
+                        <div class="boton" id="boton_gris" onclick="idiomas()">Languages<i class="fas fa-chevron-right"></i></div>
+
+                        <div class="boton" id="boton_gris" onclick="noti()">Notifications<i class="fas fa-chevron-right"></i></div>
+
+
+                        <div class="boton" id="boton_gris">Night mode<div class="switch-button">
+                            <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox" id='tema'">
+                            <label for="switch-label" class="switch-button__label" id='tema'></label>
+                        </div></i></div>
+
+
+                        <a href="#">
+                            <input class="boton" id="boton_verde" 
+                                type="submit" 
+                                value="Save">
+                        </a>
+                    </div>
+                    
+                <div class="titulo" id="justify" onclick="tips()">Tips and Rules <i class="fas fa-caret-down"></i></div>
+
+                    <div id="tips" style="display:none;">
+                        <a href="security.html">
+                            <div class="boton" id="boton_gris">Security advice<i class="fas fa-chevron-right"></i></div>
+                        </a>
+
+                        <a href="coexistence.html">
+                            <div class="boton" id="boton_gris">Coexistence rules<i class="fas fa-chevron-right"></i></div>
+                        </a>
+                    </div>
+
+                <div class="titulo" id="justify" onclick="legal()">Legal <i class="fas fa-caret-down"></i></div>
+
+                    <div id="legal" style="display:none;">
+                        <a href="rules.html">
+                            <div class="boton" id="boton_gris">Terms and conditions<i class="fas fa-chevron-right"></i></div>
+                        </a>
+
+                        <a href="privacy.html">
+                            <div class="boton" id="boton_gris">Privacy policy<i class="fas fa-chevron-right"></i></div>
+                        </a>
+                    </div>
+
+                <a href="help.html">
+                    <input class="boton" id="boton_azul" 
+                        type="submit" 
+                        value="Help">
+                </a>
+        
+		<div class="peulogin">
+			<div class="titulo">
+				<a href="login.html"> Logout </a>
+			</div>
+        </div>
+
+        <p id="result"></p>
+
+    </body>
+    <script src="../js/sistema-de-tema.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+
+
+    /* -- DESPLEGABLES --*/
+
+        var estado=document.getElementById('conf');
+        
+        function conf(){
+            if(estado.style.display=='none'){
+                estado.style.display='block';
+            }
+            else {
+                estado.style.display='none'
+            }
+        }
+
+        var estado2=document.getElementById('tips');
+        
+        function tips(){
+            if(estado2.style.display=='none'){
+                estado2.style.display='block';
+            }
+            else {
+                estado2.style.display='none'
+            }
+        }
+
+        var estado3=document.getElementById('legal');
+        
+        function legal(){
+            if(estado3.style.display=='none'){
+                estado3.style.display='block';
+            }
+            else {
+                estado3.style.display='none'
+            }
+        }
+            
+
+    /* -- AVATAR --*/
+
+            function avatar(){
+                document.getElementById('perfil').style.backgroundImage='url(../img/perfil/perfil4.svg)';
+            }
+
+
+    /* -- MENSAJE NOTIS --*/
+
+		var modo=document.getElementById('noti');
+        
+        function noti(){
+            if(modo.style.display=='block'){
+                modo.style.display='none';
+            }
+            else {
+                modo.style.display='block'
+            }
+        }
+            
+
+    /* -- MENSAJE IDIOMAS --*/
+
+		var len=document.getElementById('idiomas');
+        
+        function idiomas(){
+            if(len.style.display=='block'){
+                len.style.display='none';
+            }
+            else {
+                len.style.display='block'
+            }
+        }
+
+    </script>
+</html>

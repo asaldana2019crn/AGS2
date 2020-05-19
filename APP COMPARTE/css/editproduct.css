@@ -1,0 +1,199 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    background-color:#F4F4F6 !important;
+    margin: 0;
+    
+}
+
+    body::-webkit-scrollbar { display: none; }
+    div { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+
+/* -- PARTE SUPERIOR --*/
+
+    .parte_superior{
+        height: 2.5em;
+        width: 70%;
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    
+    .user {
+        width: 2.5em;
+        height: 2.5em;
+        background-size: cover;
+        margin: auto;
+    }
+    
+
+/* -- PRODUCTO --*/
+
+        .foto_producto {
+            position:relative;
+            height: 12em;
+            width: 20em;
+            margin: auto;
+            left: 0;
+            right: 0;
+            border-radius: 15px 15px 15px 15px;
+            background-image: url(../img/juguetes/juguete1.jpg);
+            background-size: cover;
+        }
+
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 12em;
+                border-radius: 15px 15px 15px 15px;
+            } 
+
+            .load {
+                display: inline-block; 
+                position:absolute; 
+                top:50%; 
+                left:50%; 
+                transform: translate(-50%, -50%);
+                height: 2em;
+                width: 2em;
+                margin: auto;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../img/iconos/loadimg.svg);
+            }
+
+               #upload{
+                   opacity: 0;
+                   position: absolute;
+                   z-index: -1;
+               }  
+
+        .center{
+            width: 20em;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+
+            #name{
+                box-sizing: border-box;
+                height: 2.1em;
+                width: 100%;
+                padding-left: 1.5em;
+                border-radius: 2em;	
+                border: 1px solid #757574;
+                font-size: 1.1em;
+                font-weight: lighter;
+                font-family: 'Roboto';
+                margin-bottom: 1.2em;
+                margin-top: 1.2em;
+                outline: none;
+            }
+
+            #subname{
+                box-sizing: border-box;
+                height: 4.4em;
+                width: 100%;
+                padding-left: 1.2em;
+                padding-right: 1.2em;
+                padding-top: 0.5em;
+                border-radius: 1.5em;	
+                border: 1px solid #757574;
+                font-size: 1.1em;
+                font-weight: lighter;
+                font-family: 'Roboto';
+                margin-bottom: 1.2em;
+                outline: none;
+            }
+
+                textarea {
+                    resize: none;
+                }
+
+
+/* -- CHECKBOX --*/
+
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 1.2em;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-weight: 300;
+            }
+
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0.15em;
+            left: 0;
+            height: 0.8em;
+            width: 0.8em;
+            background-color: #eee;
+            border: 1px solid #757574;
+            border-radius: 0.2em;
+          }
+
+        .container input:checked ~ .checkmark {
+        background-color: #36B07E;
+        }
+    
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }  
+          
+        .container input:checked ~ .checkmark:after {
+        display: block;
+        }
+
+    .container .checkmark:after {
+        left: 0.25em;
+        top: 0.1em;
+        width: 2px;
+        height: 7px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        }
+
+    #black{
+        color: #36B07E;
+        font-weight: normal;
+    }
+
+
+/* -- PUBLISH --*/
+    
+    .boton {
+        height: 2.1em;
+        width: 100%;
+        border-radius: 2em;
+        margin-top: 1.2em;	
+    }
+
+    #boton_verde {
+        background: linear-gradient(88.68deg, #36B07E 0%, #5EB45A 100%);
+        outline: none;
+        color: white;
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        border: none;
+    }
+

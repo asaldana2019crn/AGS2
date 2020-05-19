@@ -1,0 +1,52 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    background-color:#F4F4F6 !important;
+}
+
+body::-webkit-scrollbar { display: none; }
+
+.parte_superior{
+    height: 6em;
+    width: 15em;
+    
+    border: 1px solid #757574;
+    background-color: white;
+    border-radius: 2em;
+    text-align: center;
+    padding: 1em;
+    margin: auto;
+    right: 0;
+    left: 0;
+    margin-top: 18em;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 2em;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #36B07E;
+}
+
+.subtitle{
+    text-align: center;
+    margin-bottom: 2em;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    background: linear-gradient(83.88deg, #36B07E 0.89%, #5EB45A 99.39%);
+    height: 1.7em;
+    width: 4.5em;
+    border-radius: 1em;
+    line-height: 1.6em;
+}
+
+#yes{
+    float: left;
+    margin-left: 1em;
+}
+
+#no{
+    float: right;
+    margin-right: 1em;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+        <meta name="theme-color" content="#36B07E">
+		<meta name="msaplication-navbutton-color" content="#36B07E">
+		<link rel="icon" sizes="192x192" href="../img/perfil/avatar.png">
+		<link rel="icon" sizes="512x512" href="../img/perfil/avatar.png">
+        <meta author="Comparte">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/subirproductoedit2.css">
+        <link rel="stylesheet" href="../css/barrainferior.css">
+        <link rel="stylesheet" href="../css/recursos.css">
+		<title>COMPARTE</title>
+    </head>
+    
+	<body>
+
+            <div class="parte_superior">
+                
+                <a href="config.html">
+                    <div class="user" id="perfil1"></div>
+                </a>
+                
+            </div>
+
+<!-- PRODUCTO -->
+
+<form id="formularionuevojuguete" action="mytoys.html" method="post" enctype="multipart/form-data">
+            
+                <div class="foto_producto" id="muestra">
+                    <label for="upload"><a class="load"></a></label>
+                    <input type="file" name="imagensubida" id="upload" accept="image/png, .jpeg, .jpg" required>
+                </div>
+        
+                <div class="center">
+                    <input id="name" 
+                    type="text" 
+                    autocomplete="off" 
+                    maxlength="20" 
+                    placeholder="Frog"  
+                    required>
+                
+                    <textarea id="subname" 
+                    maxlength="70"
+                    autocomplete="off"
+                    placeholder="An angry teddy small frog                    "
+                    required></textarea>
+                
+                    <label class="container">
+                        <input  type="checkbox" id="change" onclick="uncheck()" name="change"> Toy to <a id="black">change</a>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">
+                        <input type="checkbox" id="gift" onclick="uncheck()" name="gift"> Toy to <a id="black">gift</a>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <a href="mytoys.html">
+                        <input class="boton" id="boton_verde" 
+                            type="submit" 
+                            value="Publish">
+                    </a>
+
+                </div>
+
+<!-- BARRA ATAJOS -->
+        <div class="menus_tareas">
+
+			<a href="favorites.html">
+				<div class="select" id="favoritosoff"></div>
+			</a>
+			<a href="descubre.html">
+			    <div class="select" id="descubreoff"></div>
+            </a>
+
+			<a href="subirproducto.html">
+				<div class="select"></div><div id="subirproducto"></div>
+			</a>
+			
+			<a href="mytoys.html">
+				<div class="select" id="misjuguetesoff"></div>
+			</a>
+			
+			<a href="chats.html">
+				<div class="select" id="chatsoff"></div>
+			</a>
+		</div>
+</form>
+
+<script>
+
+
+/* -- MUESTRA IMAGEN SUBIDA --*/
+
+    document.getElementById("upload").onchange = function(e) {
+
+    let reader = new FileReader();
+
+    reader.readAsDataURL(e.target.files[0]);
+
+    reader.onload = function(){
+        let preview = document.getElementById('muestra'),
+                image = document.createElement('img');
+
+        image.src = reader.result;
+
+        preview.innerHTML = '';
+        preview.append(image);
+    };
+    }
+
+
+/* -- UN ÚNICO CHECK --*/
+
+    function uncheck(){
+     var checkbox1 = document.getElementById("change");
+     var checkbox2 = document.getElementById("gift"); 
+    checkbox1.onclick = function(){ 
+    if(checkbox1.checked != false){ 
+    checkbox2.checked =null; }
+     } 
+    checkbox2.onclick = function(){ 
+    if(checkbox2.checked != false){ 
+    checkbox1.checked=null;
+     }
+     } 
+    }
+</script>
+
+    </body>
+</html>

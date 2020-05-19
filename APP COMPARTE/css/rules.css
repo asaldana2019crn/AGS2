@@ -1,0 +1,66 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin:0;
+}
+
+body::-webkit-scrollbar { display: none; }
+
+.parte_superior{
+    width: fit-content;
+    margin-top: 3em;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 2em;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #36B07E;
+}
+
+.text{
+    height: 40em;
+    width: 80%;
+    margin: auto;
+    right: 0;
+    left: 0;
+    font-weight: 200;
+    font-size: 1.2em;
+    color: #757574;
+}
+
+.cambio{
+    width: 30%;
+    height: 1.8em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-bottom: 3%;
+    padding: 1em;
+}
+
+.pastilla{
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    height: 12%;
+    width: 100%;
+}
+
+#sep1{
+    float: left;
+    color: #5EB45A;
+}
+#sep2{
+    float: right;
+    color: #5EB45A;
+}
+
+@media screen and (max-width:640px) and (orientation: portrait) {
+
+    .text{
+        height: 107.5em;
+    }
+}

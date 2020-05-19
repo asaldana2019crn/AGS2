@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+        <meta name="theme-color" content="#36B07E">
+		<meta name="msaplication-navbutton-color" content="#36B07E">
+		<link rel="icon" sizes="192x192" href="../img/perfil/avatar.png">
+		<link rel="icon" sizes="512x512" href="../img/perfil/avatar.png">
+        <meta author="Comparte">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/favorites.css">
+        <link rel="stylesheet" href="../css/barrainferior.css">
+        <link rel="stylesheet" href="../css/recursos.css">
+
+		<title>COMPARTE</title>
+    </head>
+    
+	<body>
+        <a href="config.html">
+            <div class="parte_superior">
+                
+                    <div class="user" id="perfil1"></div>
+                
+                <p><strong>Favorites</strong></p>
+            </div></a>
+
+<!-- PRODUCTO -->
+    
+        <div class="producto_favorito" id="borrar1">
+            <a href="toy_change/products2.html">
+            <div class="foto_producto" id="img2"></div></a>
+            <a href="profile.html">
+                <div class="usuario">
+                    <div class="avatar"  id="perfil4"></div>
+                    <div id="nombre_usuario">Aaron&nbspG</div>   
+                </div></a>
+                <div class="fav" onclick="borrar1()"></div>
+                <a href="toy_change/products2.html">
+                <div class="nombre_producto">Car toy</div></a>
+        </div>
+    
+        <div class="producto_favorito" id="borrar2">
+            <a href="toy_change/products4.html">
+            <div class="foto_producto" id="img4"></div></a>
+            <a href="profile.html">
+            <div class="usuario">
+                    <div class="avatar"  id="perfil2"></div>
+                    <div id="nombre_usuario">Aitor&nbspSC</div>   
+                </div></a>
+                <div class="fav" onclick="borrar2()"></div>
+                <a href="toy_change/products4.html">
+                <div class="nombre_producto">Ball</div></a>
+        </div>
+    
+        <div class="producto_favorito" id="borrar3">
+            <a href="toy_change/products6.html">
+            <div class="foto_producto" id="img6"></div></a>
+            <a href="profile.html">
+                <div class="usuario">
+                    <div class="avatar"  id="perfil3"></div>
+                    <div id="nombre_usuario">Messina</div>   
+                </div></a>
+                <div class="fav" onclick="borrar3()"></div>
+                <a href="toy_change/products6.html">
+                <div class="nombre_producto">Skate</div></a>
+        </div>
+
+       
+
+<!-- BARRA ATAJOS -->
+        <div class="menus_tareas">
+
+			<div class="select" id="favoritoson"></div>
+            
+            <a href="descubre.html">
+            <div class="select" id="descubreoff"></div>
+            </a>
+
+			<a href="subirproducto.html">
+				<div class="select"></div><div id="subirproducto"></div>
+			</a>
+			
+			<a href="mytoys.html">
+				<div class="select" id="misjuguetesoff"></div>
+			</a>
+			
+			<a href="chats.html">
+				<div class="select" id="chatsoff"></div>
+			</a>
+        </div>
+        <script>
+
+        /* -- ELIMINAR JUGUETE --*/
+
+            var estado=document.getElementById('borrar1');
+            
+            function borrar1(){
+                if(estado.style.display=='none'){
+                    estado.style.display='block';
+                }
+                else {
+                    estado.style.display='none'
+                }
+            }
+
+            var estado2=document.getElementById('borrar2');
+            
+            function borrar2(){
+                if(estado2.style.display=='none'){
+                    estado2.style.display='block';
+                }
+                else {
+                    estado2.style.display='none'
+                }
+            }
+
+            var estado3=document.getElementById('borrar3');
+            
+            function borrar3(){
+                if(estado3.style.display=='none'){
+                    estado3.style.display='block';
+                }
+                else {
+                    estado3.style.display='none'
+                }
+            }
+
+        </script>
+
+	</body>
+</html>

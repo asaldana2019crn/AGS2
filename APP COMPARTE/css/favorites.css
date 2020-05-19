@@ -1,0 +1,158 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    background-color:#F4F4F6 !important;
+}
+
+	body::-webkit-scrollbar { display: none; }
+
+a {
+	text-decoration:none;
+}
+
+
+/* -- PARTE SUPERIOR --*/
+
+    .parte_superior{
+        height: 55px;
+        width: fit-content;
+        margin: auto;
+        right: 0;
+        left: 0;
+        margin-top: 30px;
+    }
+
+        .user {
+            float: left;
+            width: 2.5em;
+            height: 2.5em;
+            background-size: cover;
+        }
+
+        .parte_superior p {
+            color: white;
+            display: inline-block;
+            font-size: 1.4em;
+            color: #36B07E;
+            margin-top: 5px;
+            padding-left: 15px;
+        }
+
+
+/* -- LISTADO DE PRODUCTOS -- */
+
+    .producto_favorito{
+        max-width: 25em;
+        height: 7em;
+        margin: 0 auto;
+        background-color: white;
+        margin-top: 1em;
+        border-radius: 9px 9px 9px 9px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+            #borrar1{
+                display: block;
+            }
+
+            #borrar2{
+                display: block;
+            }
+
+            #borrar3{
+                display: block;
+            }
+
+            
+        .foto_producto{
+            width: 35%;
+            height: 100%;
+            float: left;
+            border-radius: 9px 0px 0px 9px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .usuario{
+            min-height: 1em;
+            min-width: 28%;
+            margin-left: 1.2em;
+            background: linear-gradient(88.68deg, #36B07E 0%, #5EB45A 100%);
+            margin-top: 0.8em;
+            float: left;
+            border-radius: 1em;
+        }
+
+            .avatar{
+                height: 1.6em;
+                width: 1.6em;
+                margin-top: 3%;
+                background-size: cover;
+                float: left;
+                margin-left: 10%;
+            }
+
+            #nombre_usuario{
+                float: right;
+                color:white;
+                font-size: 0.9em;
+                height: auto;
+                width: auto;
+                font-weight: bold;
+                margin-right: 10%;
+                line-height: 2.3em;
+            }
+
+        .fav{
+            height: 2em;
+            width: 2.3em;
+            background-image: url(../img/iconos/corazonon.svg);
+            background-size: cover;
+            float: right;
+            margin-top: 0.8em;
+            margin-right: 1.2em;
+        }
+
+        .nombre_producto {
+            position: absolute;
+            float: left;
+            margin-top: 2em;
+            color: #757574;
+            font-weight: normal;
+            font-size: 1.8em;
+            padding-left: 5.5em;
+        }
+
+
+
+@media screen and (max-width:640px) and (orientation: portrait) {
+
+    .producto_favorito{
+        width: 95%;
+    }
+
+    #nombre_usuario{
+        font-size: 3vw;
+        line-height: 5vh;
+    }
+
+    .avatar{
+        margin-top: 0.7vh;
+    }
+
+    .nombre_producto {
+        position: absolute;
+        margin-top: 15%;
+        padding-left: 37%;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+

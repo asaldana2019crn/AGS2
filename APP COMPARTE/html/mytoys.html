@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<meta name="theme-color" content="#36B07E">
+		<meta name="msaplication-navbutton-color" content="#36B07E">
+		<link rel="icon" sizes="192x192" href="../img/perfil/avatar.png">
+		<link rel="icon" sizes="512x512" href="../img/perfil/avatar.png">
+		<meta author="Comparte">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/mytoys.css">
+        <link rel="stylesheet" href="../css/barrainferior.css">
+		<link rel="stylesheet" href="../css/recursos.css">
+		<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+
+		<title>COMPARTE</title>
+    </head>
+    
+	<body>
+		<a href="config.html">
+            <div class="parte_superior">
+				<div class="user" id="perfil1"></div>
+				<p><strong>My&nbsptoys</strong></p>
+            </div></a>
+
+<!-- MIS JUGUETES -->
+
+	<div class="producto" id="borrar1">
+		<a href="toy_change/products2.html"></a>
+		<div class="foto_juguete" id="img2"></div>
+		<div class="toyname">Car</div></a>
+		<div class="basura" onclick="borrar1()"></div>
+		<a href="subirproductoedit1.html">
+		<div class="editar"></div></a>
+	</div>
+
+	<div class="producto" id="borrar2">
+		<a href="toy_change/products12.html">
+		<div class="foto_juguete" id="img12"></div>
+		<div class="toyname">Frog</div></a>
+		<div class="basura" onclick="borrar2()"> </div>
+		<a href="subirproductoedit2.html">
+		<div class="editar"></div></a>
+	</div>
+
+
+<!-- BARRA ATAJOS -->
+        <div class="menus_tareas">
+
+			<a href="favorites.html">
+			<div class="select" id="favoritosoff"></div>
+			</a>
+            
+            <a href="descubre.html">
+            <div class="select" id="descubreoff"></div>
+			</a>
+			
+			<a href="subirproducto.html">
+				<div class="select"></div><div id="subirproducto"></div>
+			</a>
+			
+				<div class="select" id="misjugueteson"></div>
+			
+			<a href="chats.html">
+				<div class="select" id="chatsoff"></div>
+			</a>
+
+			
+		</div>
+
+	</body>
+	<script>
+
+	/* -- ELIMINAR JUGUETE --*/
+
+		var estado=document.getElementById('borrar1');
+        
+        function borrar1(){
+            if(estado.style.display=='none'){
+                estado.style.display='block';
+            }
+            else {
+                estado.style.display='none'
+            }
+        }
+
+		var estado2=document.getElementById('borrar2');
+        
+        function borrar2(){
+            if(estado2.style.display=='none'){
+                estado2.style.display='block';
+            }
+            else {
+                estado2.style.display='none'
+            }
+        }
+
+
+
+	</script>
+</html>

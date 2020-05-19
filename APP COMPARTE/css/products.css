@@ -1,0 +1,207 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    background-color:#F4F4F6 !important;
+    margin:0;
+}
+
+	body::-webkit-scrollbar { display: none; }
+
+a {
+    text-decoration:none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -- PARTE SUPERIOR --*/
+
+    .parte_superior{
+        height: auto;
+        width: 70%;
+        margin: auto;
+
+    }
+
+        .flecha_atras {
+            width: 29px;
+            height: 32px;
+            background-image: url(../img/iconos/flecha.svg);
+            background-size: cover;
+            position: fixed;
+            top: 2.1em;
+            float: left;
+        }
+
+        .user {
+            
+            width: 2.5em;
+            height: 2.5em;
+            background-size: cover;
+            margin: auto;
+            left: 0;
+            right: 0ch;
+            margin-top: 30px;
+        }
+
+        .reporte {
+            float: right;
+            background-image: url(../img/iconos/exclamacion.svg);
+            background-size: cover;
+            width: 0.5em;
+            height: 2.5em;
+            margin-top: -2.5em;
+        }
+
+    
+/* -- PRODUCTO --*/
+    
+    .producto_completo {
+        height: 30em;
+        width: 25em;
+        margin: auto;
+        left: 0;
+        right: 0;
+        margin-top: 5em;
+        margin-bottom: 2em;
+    }
+
+        .foto_producto {
+            background-color: #36B07E;
+            height: 12em;
+            width: 25em;
+            margin: auto;
+            border-radius: 15px 15px 0px 0px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #info {
+            background-color: white;
+            height: 45%;
+            width: 25em;
+            margin: 0 auto;
+            border-radius: 0px 0px 9px 9px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-style: normal;
+            font-weight: normal;
+            color: #757574;
+        }
+
+            .botones{
+                height: auto;
+                width: 90%;
+                margin: 0 auto;
+                padding: 15px;
+            }
+
+                .usuario{
+                    height: 80%;
+                    min-width: 31%;
+                    background: linear-gradient(88.68deg, #36B07E 0%, #5EB45A 100%);
+                    float: left;
+                    border-radius: 1em;
+                    line-height: 4em;
+                }
+
+                    .avatar{
+                        height: 1.6em;
+                        width: 1.6em;
+                        margin-top: 3%;
+                        background-size: cover;
+                        float: left;
+                        margin-left: 10%;
+                    }
+
+                    #nombre_usuario{
+                        float: right;
+                        color:white;
+                        font-size: 0.9em;
+                        height: auto;
+                        width: auto;
+                        font-weight: bold;
+                        margin-right: 10%;
+                        line-height: 0.3em;
+                    }
+
+                .items{
+                    height: 30px;
+                    width: 26%;
+                    float: right;
+                }
+
+                    .corazon_off{
+                        height: 2em;
+                        width: 2.3em;
+                        background-image: url(../img/iconos/corazonoff.svg);
+                        background-size: cover;
+                        float: left;
+                    }
+
+                    .corazon_on{
+                        height: 2em;
+                        width: 2.3em;
+                        background-image: url(../img/iconos/corazonon.svg);
+                        background-size: cover;
+                        float: left;
+                    }
+
+                    .corazon_off:active{
+                        background-image: url(../img/iconos/corazonon.svg);
+                    }
+
+                    .sends{
+                        height: 2.1em;
+                        width: 1.9em;
+                        background-image: url(../img/iconos/compartir.svg);
+                        background-size: cover;
+                        float: right;
+                    }
+
+                #descripcion{
+                    margin-top: 25px;
+                    line-height: 25px;
+                    height: auto;
+                    width: 100%;
+                    float: left;
+                }
+
+    .boton{
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 28%;
+        border-radius: 1em;
+        text-align: center;
+        line-height: 2em;
+        color: white;
+        font-size: 1.3em;
+        font-weight: bold;
+        background: linear-gradient(88.68deg, #36B07E 0%, #5EB45A 100%);
+    }
+
+@media screen and (max-width:640px) and (orientation: portrait) {
+
+    .producto_completo {
+        height: 25em;
+        width: 23.5em;
+        margin-top: 2em;
+    }
+
+    .foto_producto {
+        height: 60%;
+        width: 100%;
+    }
+    
+    #info {
+        height: 40%;
+        width: auto;
+    }
+
+    .boton{
+        width: 70%;
+    }
+
+    
+}

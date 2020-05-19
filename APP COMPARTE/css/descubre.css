@@ -1,0 +1,177 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    background-color:#F4F4F6 !important;
+    margin: 0;
+    height: 58em;
+}
+
+	body::-webkit-scrollbar { display: none; }
+
+a {
+	text-decoration:none;
+}
+
+/* -- PARTE SUPERIOR --*/
+
+.grey {
+    background-color: #F4F4F6;
+    position: fixed;
+    width: 100%;
+    height: 9em;
+    top: 0;
+}
+
+.menus_superior {
+    width: 80%;
+    height: 4em;
+    background-color: #F4F4F6;
+    padding-top: 1em;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+    .user{
+        width: 3em;
+        height: 3em;
+        background-size: cover;
+        float: left;
+        margin-top: 0.3em;
+    }
+
+    #buscar{
+        width: 83%;
+        height: 2.2em;
+        padding-left: 1.2em;
+        margin-top: 0.3em;
+        border-radius: 2em;	
+        border: 1px solid #757574;
+        font-size: 1.2em;
+        font-family: 'Roboto';
+        outline: none;
+        float: right;
+    }
+
+/* -- BARRA CAMBIO/REGALO --*/
+
+.menus_cambio{
+    width: 80%;
+    height: 2.9em;
+    position: fixed;
+    background-color: #F4F4F6;
+    padding-top: 1em;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 5em;
+    }
+
+    .line{
+        width: 0.2em;
+        height: 1.8em;
+        background: linear-gradient(83.88deg, #36B07E 0.89%, #5EB45A 99.39%);
+        border-radius: 2em;
+        position: fixed;
+        margin: auto;
+        right: 0;
+        left: 0;
+    }
+    
+    .cambio{
+        width: 30%;
+        height: 1.6em;
+        text-align: center;
+        border-radius: 2em;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 1.6em;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    #sep1{
+        float: left;
+        background: linear-gradient(83.88deg, #36B07E 0.89%, #5EB45A 99.39%);
+    }
+    #sep2{
+        float: right;
+        border: 1px solid #757574;
+        background-color: white;
+        color: #757574;
+    }
+
+    /* -- BARRA PRODUCTOS --*/
+
+    .menus_productos{
+        margin-top: 8.5em;
+        }
+    
+    .km{
+        width: 10%;
+        text-align: center;
+        line-height: 2em;
+        border-radius: 2em;
+        height: 2em;
+        font-size: 0.8em;
+        position: fixed;
+        margin: auto;
+        right: 0;
+        left: 0;
+        top: 11.3em;
+        color: white;
+        background:rgba(0, 0, 0, 0.5)
+    }
+    
+    .producto{
+        width: 11.1em;
+        height: 11.1em;
+        margin: 3.55%;
+        margin-bottom: 1.8em;
+        float: left;
+        }
+    
+          .foto{
+            height: 80%;
+            border-radius: 9px 9px 0px 0px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-size: cover;
+        }
+
+        #description{
+            background-color: white;
+            height: 3em;
+            border-radius: 0px 0px 9px 9px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1em;
+            line-height: 3em;
+            text-align: center;
+            color: #757574;
+          }
+
+          @media screen and (max-width:640px) and (orientation: portrait) {
+
+            #buscar{
+                width: 70%;
+            }
+
+            body {
+                height: 90em;
+            }
+
+            .km{
+                top: 12.6em;
+                width: 15%;
+                opacity: 70%;
+                color: #757574;
+                background: #F4F4F6;
+            }
+
+            .producto {
+                width: 42.9%;
+            }
+        }
