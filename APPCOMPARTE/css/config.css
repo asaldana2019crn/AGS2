@@ -1,0 +1,338 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    width: 65%;
+}
+
+    body::-webkit-scrollbar { display: none; }
+    
+
+a {
+	text-decoration: none;
+}
+
+
+/* -- PARTE SUPERIOR --*/
+
+    .parte_superior{
+            
+        height: 1.9em;
+        margin: auto;
+        right: 0;
+        left: 0;
+        margin-top: 2em;
+        margin-bottom: 0.4em;
+    }
+
+        .flecha_atras {
+            width: 1.6em;
+            height:1.9em;
+            background-image: url(../img/iconos/flecha.svg);
+            background-size: cover;
+            top: 2.1em;
+            float: left;
+            padding-left: -1.6em;
+        }
+
+
+/* -- CUERPO --*/
+
+    .cuerpologin {
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    .base {
+        position: relative; 
+        width: 5em;
+        height: 5em;
+        margin: 0 auto;
+        border-radius: 3em;
+    }
+
+/* -- AVATAR --*/
+
+        #perfil {
+            position: absolute; 
+            width: 5em;
+            height: 5em;
+            margin: 0 auto;
+            background-image: url(../img/perfil/perfil9.svg);
+            background-size: cover;
+            border-radius: 3em;
+            z-index: 5;
+        }
+
+            input[type=color] {
+                position: absolute;
+                -webkit-appearance: none;
+                outline:none;
+                border: none;
+                width: 5em;
+                height: 5em;
+                border-radius: 50px;
+                z-index: 10;
+                opacity: 80%;
+                margin: 0 auto;
+            }
+
+                input[type=color]::-webkit-color-swatch {
+                    border: none;
+                    border-radius: 3em;
+                    padding: 0;
+                }
+
+                input[type=color]::-webkit-color-swatch-wrapper {
+                    border: none;
+                    border-radius: 3em;
+                    padding: 0;
+                }
+
+        #fondobola {
+            position: absolute;
+            width: 5em;
+            height: 5em;
+            border-radius: 3em;
+            margin: 0 auto;
+            background-color: white;
+            z-index: 1;
+        }
+
+    .titulo {
+        color: #36B07E;
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-top: 1.3em;
+    }
+        .titulo a {
+            color: #E7245E;
+        }
+
+        #justify {
+            text-align: center;
+        }
+
+    .boton {
+        height: 2.1em;
+        width: 100%;
+        border-radius: 2em;
+        margin: auto;
+        margin-top: 0.7em;
+    }
+
+    #caudro_texto {
+        border: 1px solid #757574;
+        box-sizing: border-box;
+        font-size: 1.1em;
+        font-weight: lighter;
+        font-family: 'Roboto', sans-serif;
+        outline: none;
+        text-align: center;
+    }
+
+    #boton_gris {
+        background-color: #F4F4F6;
+        box-sizing: border-box;
+        font-size: 1.1em;
+        font-weight: 300;
+        font-family: 'Roboto';
+        text-align: center;
+        line-height: 2em;
+        margin-top: 1em;
+        color: #757574;
+        padding-left: 2.5em;
+    }
+
+    .fa-chevron-right {
+        float: right;
+        margin-top: 0.55em;
+        padding-left: 1em;
+        color: #757574;
+        padding-right: 1em;
+    }
+
+    #boton_verde {
+        background: linear-gradient(88.68deg, #36B07E 0%, #5EB45A 100%);
+        outline: none;
+        color: white;
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 1em;
+    }
+
+    #boton_azul {
+        background: linear-gradient(86.55deg, #203C89 0.16%, #1D71B8 99.72%);
+        outline: none;
+        color: white;
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 2em;
+    }
+
+    .peulogin {
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 3em;
+    }
+
+
+/* -- SWITCH --*/
+
+    :root {
+        --color-green: #36B07E;
+        --color-grey: #757574;
+        --color-button: #F4F4F6;
+        --color-black: #F4F4F6;
+    }
+    .switch-button {
+        display: inline-block;
+        float: right;
+        margin-right: 0.4em;
+        padding-top: 0.25em;
+        
+    }
+    .switch-button .switch-button__checkbox {
+        display: none;
+    }
+    .switch-button .switch-button__label {
+        background-color: var(--color-grey);
+        width: 3rem;
+        height: 1.7rem;
+        border-radius: 3rem;
+        display: inline-block;
+        position: relative;
+    }
+    .switch-button .switch-button__label:before {
+        transition: .2s;
+        display: block;
+        position: absolute;
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-top: 0.18em;
+        margin-left: 0.2em;
+        margin-right: 0.2em ;
+        background-color: var(--color-button);
+        content: '';
+        border-radius: 50%;
+        box-shadow: inset 0px 0px 0px 1px var(--color-black);
+    }
+    .switch-button .switch-button__checkbox:checked + .switch-button__label {
+        background-color: var(--color-green);
+    }
+    .switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+        transform: translateX(1.3rem);
+    }
+
+p {
+    display: none;
+}
+
+
+/* -- VENTANA NOTI --*/
+
+    .ventana{
+        position: absolute;
+        height: 6em;
+        width: 15em;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: #F4F4F6;
+        border-radius: 2em;
+        text-align: center;
+        padding: 1em;
+        margin: auto;
+        right: 0;
+        left: 0;
+        margin-top: 1.9em;
+    }
+
+        #noti{
+            display: none;
+        }
+
+    .title{
+        text-align: center;
+        margin-bottom: 2em;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #36B07E;
+    }
+
+    .subtitle{
+        text-align: center;
+        margin-bottom: 2em;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: white;
+        background: linear-gradient(83.88deg, #36B07E 0.89%, #5EB45A 99.39%);
+        height: 1.7em;
+        width: 4.5em;
+        border-radius: 1em;
+        line-height: 1.7em;
+    }
+
+    #yes{
+        float: left;
+        margin-left: 1em;
+    }
+
+    #no{
+        float: right;
+        margin-right: 1em;
+    }
+
+
+/* -- VENTANA IDIOMAS --*/
+
+    .ventana2{
+        position: absolute;
+        height: 4.8em;
+        width: 15em;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: #F4F4F6;
+        border-radius: 2em;
+        text-align: center;
+        padding: 1em;
+        margin: auto;
+        right: 0;
+        left: 0;
+        margin-top: 1.9em;
+    }
+
+        #idiomas{
+            display: none;
+        }
+
+
+    .subtitle2{
+        text-align: center;
+        margin-bottom: 2em;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: white;
+        background: linear-gradient(83.88deg, #36B07E 0.89%, #5EB45A 99.39%);
+        height: 1.7em;
+        width: 80%;
+        border-radius: 1em;
+        line-height: 1.7em;
+    }
+
+    #ca{
+        margin: 0 auto;
+    }
+
+    #en{
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+
+
+@media screen and (max-width:640px) and (orientation: portrait) {
+
+    .cuerpologin {
+        width: 65%;
+    }   
+
+}

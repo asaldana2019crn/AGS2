@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+        <meta name="theme-color" content="#36B07E">
+		<meta name="msaplication-navbutton-color" content="#36B07E">
+		<link rel="icon" sizes="192x192" href="../img/perfil/avatar.png">
+		<link rel="icon" sizes="512x512" href="../img/perfil/avatar.png">
+        <meta author="Comparte">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/help.css">
+        <link rel="stylesheet" href="../css/recursos.css">
+        <script src="https://kit.fontawesome.com/6c662958dd.js" crossorigin="anonymous"></script>
+
+		<title>COMPARTE</title>
+
+	</head>
+	<body>
+
+<!-- PARTE SUPERIOR -->
+
+        <div class="parte_superior">
+            <a href="javascript: history.go(-1)"> 
+                <div class="flecha_atras"> </div>
+            </a>
+            <p class="titulo"><strong>HELP</strong></p>
+        </div>
+            
+        
+
+    
+<!-- PRODUCTO -->
+
+        <div class="logo_marca"> </div>
+
+        <div class="datos">
+            <p>WWW.COMPARTE.COM <br> soporte.comparte@gmail.com</p>
+        </div>
+        
+        <a href="questions.html">
+            <div class="boton" id="cuadro_texto">Frequent questions<i class="fas fa-chevron-right"></i></div>
+        </a>
+
+        <div class="boton" id="cuadro_texto" onclick="update()">Updates<i class="fas fa-chevron-right"></i></div>
+
+            <div id="update">
+                <div class="title" onclick="update()">Updated software</div>
+            </div>
+
+        <div class="version">
+            <p>Version 1.0 <br> Copyright © 2020 COMPARTE, Inc</p>
+        </div>
+
+    </body>
+    <script>
+
+/* -- MENSAJE DE ACTUALICACIÓN --*/
+
+		var estado=document.getElementById('update');
+        
+        function update(){
+            if(estado.style.display=='block'){
+                estado.style.display='none';
+            }
+            else {
+                estado.style.display='block'
+            }
+        }
+
+    </script>
+</html>

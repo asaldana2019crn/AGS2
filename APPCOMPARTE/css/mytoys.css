@@ -1,0 +1,121 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    background-color:#F4F4F6 !important;
+}
+
+	body::-webkit-scrollbar { display: none; }
+
+a {
+	text-decoration:none;
+}
+
+
+/* -- PARTE SUPERIOR --*/
+
+    .parte_superior{
+        height: 55px;
+        width: fit-content;
+        margin: auto;
+        right: 0;
+        left: 0;
+        margin-top: 30px;
+    }
+
+        .user {
+            float: left;
+            width: 2.5em;
+            height: 2.5em;
+            background-size: cover;
+        }
+
+        .parte_superior p {
+            color: white;
+            display: inline-block;
+            font-size: 1.4em;
+            color: #36B07E;
+            margin-top: 5px;
+            padding-left: 15px;
+        }
+
+
+/* -- LISTADO DE PRODUCTOS -- */
+
+    .producto{
+        max-width: 25em;
+        height: 7em;
+        margin: 0 auto;
+        background-color: white;
+        margin-top: 1em;
+        border-radius: 9px 9px 9px 9px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    } 
+
+            #borrar1{
+                display: block;
+            }
+
+            #borrar2{
+                display: block;
+            }
+
+        .foto_juguete{
+            width: 35%;
+            height: 100%;
+            float: left;
+            border-radius: 9px 0px 0px 9px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .toyname{
+            float: left;
+            margin-left: 0.7em;
+            color:#757574;
+            font-size: 2em;
+            height: auto;
+            width: auto;
+            font-weight: normal;
+            margin-right: 13%;
+            line-height: 10vh;
+        }
+
+        .basura {
+            height: 30%;
+            width: 8.5%;
+            background-image: url(../img/iconos/basura.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            float: right;
+            margin-top: 0.9em;
+            margin-right: 1.2em;
+        }
+
+        .editar {
+            float: right;
+            height: 30%;
+            width: 8.5%;
+            background-image: url(../img/iconos/editar.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            float: right;
+            margin-top: 1.2em;
+            margin-left: 4em;
+            margin-right: 1.2em;
+            margin-bottom: 1.2em;
+        }
+
+
+@media screen and (max-width:640px) and (orientation: portrait) {
+
+    .producto{
+        width: 95%;
+    }
+
+    .toyname {
+        font-size: 8vw;
+        line-height: 10vh;
+        margin-right: 8%;
+    }      
+        
+                    
+}

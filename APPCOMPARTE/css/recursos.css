@@ -1,0 +1,118 @@
+
+
+/* -- FOTOS USUARIOS -- */
+
+    #perfil1{
+        background-image: url(../img/perfil/perfil1.svg);
+    }
+    #perfil2{
+        background-image: url(../img/perfil/perfil2.svg);
+    }
+    #perfil3{
+        background-image: url(../img/perfil/perfil3.svg);
+    }
+    #perfil4{
+        background-image: url(../img/perfil/perfil4.svg);
+    }
+    #perfil5{
+        background-image: url(../img/perfil/perfil5.svg);
+    }
+    #perfil6{
+        background-image: url(../img/perfil/perfil6.svg);
+    }
+    #perfil7{
+        background-image: url(../img/perfil/perfil7.svg);
+    }
+    #perfil8{
+        background-image: url(../img/perfil/perfil8.svg);
+    }
+    #perfil9{
+        background-image: url(../img/perfil/perfil9.svg);
+    }
+
+
+
+
+/* -- FOTOS PRODUCTOS -- */
+
+    #img1{
+        background-image: url(../img/juguetes/juguete1.jpg);	
+    }
+    #img2{
+        background-image: url(../img/juguetes/juguete2.jpg);	
+    }
+    #img3{
+        background-image: url(../img/juguetes/juguete3.jpg);	
+    }
+    #img4{
+        background-image: url(../img/juguetes/juguete4.jpg);	
+    }
+    #img5{
+        background-image: url(../img/juguetes/juguete5.jpg);	
+    }
+    #img6{
+        background-image: url(../img/juguetes/juguete6.jpg);	
+    }
+    #img7{
+        background-image: url(../img/juguetes/juguete7.jpg);	
+    }
+    #img8{
+        background-image: url(../img/juguetes/juguete8.jpg);	
+    }
+    #img9{
+        background-image: url(../img/juguetes/juguete9.jpg);	
+    }
+    #img10{
+        background-image: url(../img/juguetes/juguete10.jpg);	
+    }
+    #img11{
+        background-image: url(../img/juguetes/juguete11.jpg);	
+    }
+    #img12{
+        background-image: url(../img/juguetes/juguete12.jpg);	
+    }
+    #img13{
+        background-image: url(../img/juguetes/juguete13.jpg);	
+    }
+    #img14{
+        background-image: url(../img/juguetes/juguete14.jpg);	
+    }
+    #img15{
+        background-image: url(../img/juguetes/juguete15.jpg);	
+    }
+    #img16{
+        background-image: url(../img/juguetes/juguete16.jpg);	
+    }
+    #img17{
+        background-image: url(../img/juguetes/juguete17.jpg);	
+    }
+    #img18{
+        background-image: url(../img/juguetes/juguete18.jpg);	
+    }
+    #img19{
+        background-image: url(../img/juguetes/juguete19.jpg);	
+    }
+    #img20{
+        background-image: url(../img/juguetes/juguete20.jpg);	
+    }
+    #img21{
+        background-image: url(../img/juguetes/juguete21.jpg);	
+    }
+    #img22{
+        background-image: url(../img/juguetes/juguete22.jpg);	
+    }
+    #img23{
+        background-image: url(../img/juguetes/juguete23.jpg);	
+    }
+    #img24{
+        background-image: url(../img/juguetes/juguete24.jpg);	
+    }
+
+
+/* -- NIGHT MODE -- */
+
+    body{ background: white}
+    .black{background: linear-gradient(180deg, #434343 0%, #000000 100%);}
+   
+
+    

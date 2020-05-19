@@ -1,0 +1,126 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+	body::-webkit-scrollbar { display: none; }
+
+a {
+	text-decoration: none;
+}
+
+
+/* -- PARTE SUPERIOR --*/
+
+    .parte_superior{
+        
+        width: 65%;
+        margin: auto;
+        right: 0;
+        left: 0;
+        margin-top: 3em;
+    }
+
+        .flecha_atras {
+            width: 1.6em;
+            height:1.9em;
+            background-image: url(../img/iconos/flecha.svg);
+            background-size: cover;
+            top: 2.1em;
+            float: left;
+            padding-left: -1.6em;
+        }
+
+    .titulo {
+        font-size: 1.4em;
+        color: #36B07E;
+        text-align: center;
+        width: 65%;
+        margin: auto;
+    }
+        
+
+/* -- CUERPO --*/
+
+    .logo_marca {
+        position: relative; 
+        width: 12em;
+        height: 9em;
+        margin: 0 auto;
+        background-image: url(../img/marca/marca.svg);
+        background-size: cover;
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+
+    .boton {
+        height: 2.1em;
+        width: 65%;
+        border-radius: 2em;
+        margin-top: 1.2em;	
+        margin: auto;
+    }
+
+    #cuadro_texto {
+        background-color: #F4F4F6;
+        box-sizing: border-box;
+        font-size: 1.1em;
+        font-weight: 300;
+        font-family: 'Roboto';
+        text-align: center;
+        line-height: 2em;
+        margin-top: 2em;
+        color: #757574;
+        padding-left: 2.5em;
+    }
+
+    .fa-chevron-right {
+       float: right;
+       margin-top: 0.55em;
+       padding-left: 1em;
+       color: #757574;
+       padding-right: 1em;
+    }
+
+    .datos {
+        font-family: 'Roboto';
+        color: #36B07E;
+        line-height: 2em;
+        text-align: center;
+    }
+
+    .version {
+        font-family: 'Roboto';
+        color: #757574;
+        line-height: 2em;
+        text-align: center;
+        margin-top: 6em;
+    }
+
+
+/* -- MENSAJE DE ACTUALICACIÓN --*/
+
+    #update{
+        position: absolute;
+        bottom: 9em;
+        height: 2em;
+        width: 15em;
+        z-index: 100;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: #F4F4F6;
+        border-radius: 2em;
+        text-align: center;
+        padding: 1em;
+        margin: auto;
+        right: 0;
+        left: 0;
+        display: none;
+    }
+
+    .title{
+        text-align: center;
+        font-weight: bold;
+        line-height: 1.5em;
+        font-size: 1.4em;
+        color: #36B07E;
+    }

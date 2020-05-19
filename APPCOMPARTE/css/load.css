@@ -1,0 +1,36 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+}
+
+.logo {
+	position: static;
+	width: 16em;
+	height: 12em;
+	margin: auto;
+	margin-top: 10%;
+	background-color: white;
+	background-image: url(../img/marca/marca.svg);
+	background-size: cover;
+}
+
+.version {
+	font-family: 'Roboto', sans-serif;
+	color: #757574;
+	line-height: 2em;
+	text-align: center;
+	position: static;
+	margin-top: 15%;
+}
+
+
+@media screen and (max-width:640px) and (orientation: portrait) {
+
+    .logo {
+        margin-top: 45%;
+    }
+
+    .version {
+        margin-top: 50%;
+    }
+}

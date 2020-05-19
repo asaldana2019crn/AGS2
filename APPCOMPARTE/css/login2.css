@@ -1,0 +1,98 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    background-color:#fff;
+}
+
+	body::-webkit-scrollbar { display: none; }
+
+a {
+	text-decoration:none;
+}
+
+
+/* -- PARTE SUPERIOR --*/
+
+    .cuerpologin {
+        margin: 0 auto;
+        width: 65%;
+    }
+
+        .logo_marca {
+            position: relative; 
+            width: 15em;
+            height: 11.25em;
+            margin: 0 auto;
+            background-image: url(../img/marca/marca.svg);
+            background-size: cover;
+            margin-top: 3em;
+        }
+
+        .barra {
+            position: relative;
+            height: 0.3em;
+            margin: 0 auto;
+            margin-top: 3em;
+            background: linear-gradient(88.68deg, #36B07E 0%, #5EB45A 100%);
+        }
+
+
+/* -- CUERPO --*/
+
+
+    .titulo {
+        color: #36B07E !important;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 1.5em;
+    }
+
+        .titulo a {
+            color: #36B07E;
+        }
+
+    .boton {
+        height: 2.1em;
+        width: 100%;
+        border-radius: 2em;
+        margin-top: 1.2em;	
+    }
+
+    #caudro_texto {
+        border: 1px solid #757574;
+        box-sizing: border-box;
+        font-size: 1.1em;
+        font-weight: lighter;
+        font-family: 'Roboto', sans-serif;
+        outline: none;
+        padding-left: 1.5em;
+    }
+            
+    #boton_verde {
+        background: linear-gradient(88.68deg, #36B07E 0%, #5EB45A 100%);
+        outline: none;
+        color: white;
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #recu {
+        color: #757574;
+        font-size: 1.2em;
+        margin-top: 1em;
+        font-weight: 150;
+        text-align: center;
+    }
+
+        #recu a {
+            color: #757574;
+        }
+
+    .peulogin {
+        text-align: center;
+        margin-top: 6.5em;
+        
+    }
+
+        
+            
